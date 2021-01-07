@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            /* top
+            bottom
+            right
+            left  */
+            .box {
+                background: red;
+                width: 200px;
+                height: 200px;
+                margin-left: 20px;
+                float: left;
+            }
+            .box1 {
+                float: left;
+                background: red;
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box" id="box" name="hh"></div>
+        
+        <div class="box" id="box1" name="hh"></div>
+
+        
+        
+        <script>
+            var box = document.getElementById("box")
+            box.style.marginLeft = "550px"
+
+            var box1 = document.getElementById("box1")
+            box1.style.marginLeft = "550px"
+
+        </script>
+    </body>
+</html>
