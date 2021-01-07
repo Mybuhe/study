@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="app-4">
+        <ol>
+        <!-- v-for 它可以在任何的元素上执行 -->
+          <li v-for="todo in todos1">
+            {{ todo.text }}
+          </li>
+        </ol>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app4 = new Vue({
+            el: '#app-4',
+            data: {
+                todos1: [
+                    { text: '%|%'},
+                    { text: '学习 Vue' },
+                    { text: '整个牛项目' }
+                ]
+            }
+        })
+    </script>
+</body>
+</html>
